@@ -8,6 +8,7 @@ import TextField from 'material-ui/TextField';
 display:inline-block;
 margin:20px 530px 15px 0;
  `;
+ 
  const Styles = {
   marginRight: 15,
 };

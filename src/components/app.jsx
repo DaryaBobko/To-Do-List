@@ -7,7 +7,8 @@ import {Search} from './search/Search.js'
 import {TasksList} from './tasksList/TasksList.js'
 import {Task} from "../models/Task";
 import styled from "styled-components";
-import {Progress} from './progress/Progress.js'
+import {Progress} from './progress/Progress.js';
+import 'font-awesome/css/font-awesome.css';
 
 const Div = styled.div`
 padding: 0 35px;

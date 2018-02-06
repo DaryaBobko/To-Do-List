@@ -14,10 +14,9 @@ color: palevioletred;
 text-align:left;
 display:inline-block;
 `;
-const CategoryName = styled.div `
+const CategoryName = styled.span `
 color:#138590;
 font-size: 14px;
-padding-left: 25px;
 `;
 const iconStyles = {
   marginRight: 24,
