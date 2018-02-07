@@ -8,22 +8,40 @@ import ActionHome from 'material-ui/svg-icons/action/home';
 const Wrapper = styled.div `
 width: 250px;
 border: 1px solid #000000;
-border-radius: 1px;
-font-size: 14px;
-color: palevioletred;
-text-align:left;
+border-radius: 2px;
+font-size: 16px;
 display:inline-block;
 `;
 const CategoryName = styled.span `
-color:#138590;
-font-size: 14px;
+margin-left: 20px;
+color:#00bcd4;
 `;
-const iconStyles = {
-  marginRight: 24,
-  height: 20,
-  width: 20,
- 
-};
+
+const IconForAdd = styled.i`
+padding: 2;
+margin: 2;
+float: right;
+margin-right: 10px;
+border: 1px solid #dbdbdb;
+border-spacing: 2px 7px;
+`;
+
+const IconForRemove = styled.i`
+padding: 2;
+margin: 2;
+float: right;
+margin-right: 10px;
+border: 1px solid #dbdbdb;
+border-spacing: 2px 7px;
+`;
+
+const IconForEdit = styled.i`
+padding: 2;
+margin: 2;
+margin-left: 10px;
+border: 1px solid #dbdbdb;
+border-spacing: 2px 7px;
+`;
 
 export class CategoryElement extends Component {
 
@@ -45,20 +63,11 @@ export class CategoryElement extends Component {
   render() {
     return (
       <Wrapper onClick={this.openTasks}>
-        {/* <Open>+</Open> */}
-    <IconButton tooltip="Font Icon" style={iconStyles}>
-      <FontIcon className="muidocs-icon-action-home" />
       <CategoryName>{this.props.category.name}</CategoryName>
-    </IconButton>
+      <IconForEdit className="fa fa-pencil-square-o"></IconForEdit>
+      <IconForAdd className="fa fa-plus"></IconForAdd>
+      <IconForRemove className="fa fa-trash-o"></IconForRemove>
 
-        {/* <Edit></Edit>
-        <Remove></Remove>
-        <Add></Add> */}
-        {/* if (false) {< CategoryList onRef = {
-          ref => (this.categoryList = ref)
-        } />
-} */}
-        {/* <CategoryList onRef={ref => (this.categoryList = ref)}/> */}
       </Wrapper>
 
     );
